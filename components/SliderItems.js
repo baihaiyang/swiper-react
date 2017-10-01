@@ -1,11 +1,16 @@
 import React,{Component} from 'react';
 export default class SliderItems extends Component{
 	render(){
+		let style = {
+			left:500 * this.props.index + 'px',
+			width: 500 * this.props.images.length + 'px',
+			transitionDuration: this.props.speed + 's'
+		};
 		return (
-			<ul>
+			<ul style={style} className="sliders">
 				{
 					this.props.iamges.map((image,index)=>(
-						<li><img src={image}/></li>
+						<li className="slider"><img src={image}/></li>
 					))
 				}
 			</ul>
