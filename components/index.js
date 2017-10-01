@@ -4,8 +4,8 @@ export default class Slider extends Component{
 		return (
 			<div>
 				<SliderItems images={this.props.images}/>
-				<SliderArrows />
-				<SliderDots images={this.props.images}/>
+				{this.props.arrow ? <SliderArrows /> : null}
+				{this.props.dots ? <SliderDots images={this.props.images}/> : null}
 			</div>
 		)
 	}

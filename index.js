@@ -7,6 +7,6 @@ const images = {
 	require("./images/3.jpg")
 };
 ReactDOM.render(
-	<Slider images={images}/>,
+	<Slider images={images} arrow={true} dots={true} speed={1.2} auto={true}/>,
 	document.querySelector('#root')
 );
