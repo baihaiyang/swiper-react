@@ -9,7 +9,7 @@ export default class SliderItems extends Component{
 		return (
 			<ul style={style} className="sliders">
 				{
-					this.props.iamges.map((image,index)=>(
+					this.props.images.map((image,index)=>(
 						<li className="slider"><img src={image}/></li>
 					))
 				}

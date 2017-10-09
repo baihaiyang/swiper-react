@@ -23,8 +23,8 @@ export default class Slider extends Component{
 		return (
 			<div>
 				<SliderItems index={this.state.index} images={this.props.images}/>
-				{this.props.arrow ? <SliderArrows /> : null}
-				{this.props.dots ? <SliderDots images={this.props.images}/> : null}
+				{this.props.arrow ? <SliderArrows turn={this.turn}/> : null}
+				{this.props.dots ? <SliderDots images={this.props.images} turn={this.turn} index={this.state.index}/> : null}
 			</div>
 		)
 	}
